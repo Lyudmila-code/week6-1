@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 98%;
+        height: 98vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-area: 1/6/1/5;
+        justify-items: stretch;
+        align-items: stretch;
+      }
+      header {
+        background-color: aquamarine;
+        grid-area: 1/1/2/5;
+      }
+      main {
+        background-color: plum;
+        grid-area: 2/1/5/4;
+      }
+      aside {
+        background-color: yellow;
+        grid-area: 2/4/5/5;
+      }
+      footer {
+        background-color: peru;
+        grid-area: 5/1/6/5;
+      }
+      .sectiomain1 {
+        background-color: pink;
+        margin: 5px;
+        grid-area: 3/1/4/2;
+      }
+      .sectiomain2 {
+        background-color: pink;
+        margin: 5px;
+        grid-area: 3/3/4/4;
+      }
+      .sectiomain3 {
+        background-color: pink;
+        margin: 5px;
+        grid-area: 4/1/5/4;
+      }
+      .sectionfooter {
+        background-color: rgb(143, 232, 60);
+        margin: 10px;
+        width: 50%;
+      }
+      .one {
+        grid-area: 5/1/6/2;
+      }
+      .two {
+        grid-area: 5/2/6/3;
+      }
+      .three {
+        grid-area: 5/3/6/4;
+      }
+      .four {
+        grid-area: 5/4/6/5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">шапка страницы</header>
+      <main class="main">основная часть</main>
+      <aside class="saidbar">боковая область</aside>
+      <footer class="footer"></footer>
+      <section class="sectiomain1">Еще 1</section>
+      <section class="sectiomain2">Еще 2</section>
+      <section class="sectiomain3">Еще 3</section>
+      <section class="sectionfooter one">Секция футер 1</section>
+      <section class="sectionfooter two">Секция футер 2</section>
+      <section class="sectionfooter three">Секция футер 3</section>
+      <section class="sectionfooter four">Секция футер 4</section>
+    </div>
+  </body>
+</html>
