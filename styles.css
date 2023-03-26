@@ -14,7 +14,6 @@ body {
 }
 header {
     font-family: 'Roboto', sans-serif, 'Times New Roman', Times, serif;
-    font-weight: 400;
     font-style: normal;
     font-weight: bolder;
     width: 96%;
@@ -74,7 +73,6 @@ form.Search {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 10px;
-    padding: 20px 15px;
 }
 #formone {
     border: 3px solid#f8bb21;
@@ -488,4 +486,17 @@ address {
     justify-content: space-between;
     align-items: center;
 }
-
+@media screen and(min-width:768px) and(max-width:932px) {
+    body {
+    background-image: url(./week6/stephen-leonardi-Al9Cl-b7EFU-unsplash\ 1.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top right ;
+    }
+}
+@media screen and(max-width:767px) and(min-width:480px) {
+    
+}
+@media screen and(max-width:479px) {
+    
+}
